@@ -1,0 +1,2 @@
+- [FEM and wFEM plan](fem-and-wfem-plan.md) — mainnet stays 23124; separate four-validator Railway testnet uses 23126 and 2-second blocks; bootnodes remain pending.
+- [FEM contract deployment](fem-contract-deployment.md) — contract deployment should remain permissionless, with no deployer allowlist.

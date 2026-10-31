@@ -1,0 +1,7 @@
+docker/local/Dockerfile
+.git/
+.agents/
+.local/
+attached_assets/
+fem-chain-*/
+**/*.key

@@ -1,0 +1,97 @@
+{
+    "name": "fem",
+    "genesis": {
+        "nonce": "0x0000000000000000",
+        "timestamp": "0x0",
+        "extraData": "0x0000000000000000000000000000000000000000000000000000000000000000f90129f90120f8469488545ca3b1c77a2cc8012d6e0b59e8c8e75e6fb9b08e099af49b76a7f22c5191694c92cd5b2cdef36120088addf210478e9d2f4f2c65caca3fa95405f3c3d1ec6df8e1594ff8469455bc7a3e7c37f2fd0f62672fc6989a7b2376f17cb095d828c46adf2ae87e8c0e8656b922009affb1675d6aea86cc0f97b6fd5589dc3e69178cd314a4c7de91f1727acdc212f8469446bad3cd94827fd4ee854aa177671c3b5d057e49b08a68b80b063e56aad7b36636ee22079367efe55963f0f9bd7f887932aef8b685219edd284e70d173d2b0b874fd663256f846944e524fbd583aca7bd6db8bf4acea348cbc4a3bb0b0a430bf85c5299477448672f069bc85af9fa3f765da2fa8961db3922664af845ed91253cd786e5a265ca56e1619ce885180c28080c080",
+        "gasLimit": "0x989680",
+        "difficulty": "0x1",
+        "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "coinbase": "0x0000000000000000000000000000000000000000",
+        "alloc": {
+            "0x16b44944C229faA3bdC6f8A116a9b00CC56bc598": {
+                "balance": "0xf8277896582678ac000000"
+            },
+            "0x36aa6374D6FCC0F4e07e72549068C2C2Df043078": {
+                "balance": "0x9b18ab5df7180b6b8000000"
+            },
+            "0x38B9bbECA3bB1437edeBA2c6298024e1c1C8E997": {
+                "balance": "0x19d971e4fe8401e740000000"
+            },
+            "0x42BBADB8578b2b2530CEEE144ffee4bb9D1Fb39a": {
+                "balance": "0x33b2e3c9fd0803ce8000000"
+            },
+            "0x45d825F534980d2fA34E560774cd9fCB611ffD38": {
+                "balance": "0xe8a5010cf2a411214000000"
+            },
+            "0x5424Dd358fa23FBdcDf32aA6eAB00f905Be8EFA0": {
+                "balance": "0x6765c793fa10079d0000000"
+            },
+            "0x5ecD2a8E42643841Fd311df9BEC572e2E69BC4D7": {
+                "balance": "0xc47494cc5b1e74dd8000000"
+            },
+            "0xEe0DC6E85d350cAB2a86F93b3Cf00AC45B58fB39": {
+                "balance": "0x4d8c55aefb8c05b5c000000"
+            },
+            "0xeCf0E1B96e2DE7bD7142a9Aa857370Cb6ac198D8": {
+                "balance": "0x2e87669c308736a04000000"
+            }
+        },
+        "number": "0x0",
+        "gasUsed": "0x0",
+        "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "baseFee": "0x3b9aca00",
+        "baseFeeEM": "0x2",
+        "baseFeeChangeDenom": "0x8"
+    },
+    "params": {
+        "forks": {
+            "EIP150": {
+                "block": 0
+            },
+            "EIP155": {
+                "block": 0
+            },
+            "EIP158": {
+                "block": 0
+            },
+            "byzantium": {
+                "block": 0
+            },
+            "constantinople": {
+                "block": 0
+            },
+            "homestead": {
+                "block": 0
+            },
+            "istanbul": {
+                "block": 0
+            },
+            "londonfix": {
+                "block": 0
+            },
+            "petersburg": {
+                "block": 0
+            },
+            "quorumcalcalignment": {
+                "block": 0
+            },
+            "txHashWithType": {
+                "block": 0
+            }
+        },
+        "chainID": 23124,
+        "engine": {
+            "ibft": {
+                "blockTime": 2000000000,
+                "epochSize": 100000,
+                "type": "PoA",
+                "validator_type": "bls"
+            }
+        },
+        "blockGasTarget": 0,
+        "burnContract": null,
+        "burnContractDestinationAddress": "0x0000000000000000000000000000000000000000"
+    },
+    "bootnodes": []
+}

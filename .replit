@@ -1,0 +1,52 @@
+modules = ["bash", "nodejs-20", "python-base-3.13"]
+
+[nix]
+channel = "stable-25_05"
+
+[agent]
+expertMode = true
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Fem Chain Devnet"
+
+[[workflows.workflow]]
+name = "Fem Chain Devnet"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "bash start-fem-chain.sh"
+waitForPort = 8080
+
+[workflows.workflow.metadata]
+outputType = "console"
+
+[[ports]]
+localPort = 8080
+externalPort = 80
+
+[[ports]]
+localPort = 10202
+externalPort = 3002
+
+[[ports]]
+localPort = 10203
+externalPort = 3000
+
+[[ports]]
+localPort = 10204
+externalPort = 3001
+
+[deployment]
+deploymentTarget = "vm"
+run = ["bash", "start-fem-chain.sh"]
+build = ["bash", "-c", "GOPROXY=direct GONOSUMDB=* go build -o polygon-edge -ldflags=\"-X 'github.com/0xPolygon/polygon-edge/versioning.Version=v1.0.0' -X 'github.com/0xPolygon/polygon-edge/versioning.Branch=main'\" main.go"]
